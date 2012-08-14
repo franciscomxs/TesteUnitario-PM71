@@ -15,8 +15,8 @@ public class AvaliadorTest {
 	
 	@Test
 	public void deveEntenderLancesEmOrdemCrescente() {
-		Usuario joao = new Usuario("João");
-		Usuario jose = new Usuario("José");
+		Usuario joao = new Usuario("Jo√£o");
+		Usuario jose = new Usuario("Jos√©");
 		Usuario maria = new Usuario("Maria");
 		
 		Leilao leilao = new Leilao("Playstation 3");
@@ -33,8 +33,8 @@ public class AvaliadorTest {
 
 	@Test
 	public void deveEntenderLeilaoComApenasUmLance(){
-		Usuario joao = new Usuario("João");
-		Leilao leilao = new Leilao("Coleção de pokemons");
+		Usuario joao = new Usuario("Jo√£o");
+		Leilao leilao = new Leilao("Cole√ß√£o de pokemons");
 		leilao.propoe(new Lance(joao, 200.0));
 		Avaliador leiloeiro = new Avaliador();
 		leiloeiro.avalia(leilao);
@@ -46,8 +46,8 @@ public class AvaliadorTest {
 	
 	@Test
 	public void deveEntenderLancesDeFormaRandomica(){
-		Usuario joao = new Usuario("João");
-		Usuario jose = new Usuario("José");
+		Usuario joao = new Usuario("Jo√£o");
+		Usuario jose = new Usuario("Jos√©");
 		Usuario maria = new Usuario("Maria");
 		Usuario joaquin = new Usuario("Joaquin");
 		Usuario gabriel = new Usuario("Gabriel");
@@ -69,8 +69,8 @@ public class AvaliadorTest {
 	
 	@Test
 	public void deveEntenderLancesEmOrdemDecrescente() {
-		Usuario joao = new Usuario("João");
-		Usuario jose = new Usuario("José");
+		Usuario joao = new Usuario("Jo√£o");
+		Usuario jose = new Usuario("Jos√£");
 		Usuario maria = new Usuario("Maria");
 		Usuario joaquim = new Usuario("Joaquim");
 		
@@ -89,8 +89,8 @@ public class AvaliadorTest {
 	}
 	
 	public void deveDefinirOsTresMaioresLancesComListaCheia(){
-		Usuario joao = new Usuario("João");
-		Usuario jose = new Usuario("José");
+		Usuario joao = new Usuario("Jo√£o");
+		Usuario jose = new Usuario("Jos√©");
 		Usuario maria = new Usuario("Maria");
 		Usuario joaquim = new Usuario("Joaquim");
 		Usuario pedro = new Usuario("Pedro");
@@ -143,4 +143,5 @@ public class AvaliadorTest {
 		
 		assertEquals(0, maiores.size());
 	}
+
 }
